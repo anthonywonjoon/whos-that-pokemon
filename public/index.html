@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/index-style.css">
+    <link rel="stylesheet" href="./css/nav-style.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="navbar">
-        <div class="nav-links">
-            <table>
-                <th>Whose that Pokemon!</th>
-                <th>About</th>
-                <th>Game</th>
-                <th>Log in</th>
-            </table>
+    
+    <div id="navbar" class="navbar"></div>
+    <h1 class="title">Who's that Pokemon?</h1>
+    <div class="game_container">
+        <div class="game_info game"></div>
+        <div class="game_board game">
+            <div id="sprite"></div>
+            <div id="hint_type1"></div>
+            <div id="hint_type2"></div>
         </div>
+        <div class="game_guesses game"></div>
     </div>
+    <button onclick="startGame()">PLAY</button>
+    <script src="./js/pokemon.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        createNav();
+    </script>
 </body>
 </html>
