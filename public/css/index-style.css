@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "pokemonGb";
+  src: url(../assets/pokemon_gb.ttf);
+}
 body {
   margin: 0;
   width: 100%;
+  font-family: "pokemonGb";
 }
 
 img {
@@ -18,10 +23,24 @@ img {
   width: 33%;
   border: 1px solid black;
   text-align: center;
+  height: 500px;
 }
 
 .game_container:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.game_board_guess {
+  border-top: 1px solid black;
+}
+
+.game_board {
+  text-align: center;
+}
+
+.hint_type {
+  justify-content: center;
+  width: 100%;
 }/*# sourceMappingURL=index-style.css.map */

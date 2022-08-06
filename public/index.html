@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index-style.css">
     <link rel="stylesheet" href="./css/nav-style.css">
+    <link rel="stylesheet" href="./css/types-style.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,14 +14,50 @@
     <div id="navbar" class="navbar"></div>
     <h1 class="title">Who's that Pokemon?</h1>
     <div class="game_container">
-        <div class="game_info game"></div>
-        <div class="game_board game">
-            <div id="sprite"></div>
-            <div id="hint_type1"></div>
-            <div id="hint_type2"></div>
+        <!-- left column for leaderboard -->
+        <div class="game_info game">
+            <h2>Leaderboard</h2>
+            <div id="top_scores" class="top_scores"> 
+                <ol>
+                    <li class="leader1">TEST - SCORE</li><br>
+                    <li class="leader2">TEST - SCORE</li><br>
+                    <li class="leader3">TEST - SCORE</li><br>
+                    <li class="leader4">TEST - SCORE</li><br>
+                    <li class="leader5">TEST - SCORE</li><br>
+                    <li class="leader6">TEST - SCORE</li><br>
+                    <li class="leader7">TEST - SCORE</li><br>
+                    <li class="leader8">TEST - SCORE</li><br>
+                    <li class="leader9">TEST - SCORE</li><br>
+                    <li class="leader10">TEST - SCORE</li><br>
+                </ol>
+            </div>
         </div>
-        <div class="game_guesses game"></div>
+
+        <!-- middle column for game -->
+        <div class="game_board game"> 
+            <div id="sprite"><img src="./assets/pokeball.gif"></div>
+            <div id="hint_type"></div>
+            <div id="hint_cry"></div>
+            <div id="game_board_guess" class="game_board_guess"></div>
+        </div>
+
+        <!-- right column for personal scores -->
+        <div class="game_guesses game">
+            <h2>Your Scores</h2>
+            <div id="personal_scores" class="personal_scores">
+                <ol>
+                    <li class="personal1">DATE - SCORE</li><br>
+                    <li class="personal2">DATE - SCORE</li><br>
+                    <li class="personal3">DATE - SCORE</li><br>
+                    <li class="personal4">DATE - SCORE</li><br>
+                    <li class="personal5">DATE - SCORE</li><br>
+
+                </ol>
+            </div>
+        </div>
     </div>
+
+
     <button onclick="startGame()">PLAY</button>
     <script src="./js/pokemon.js"></script>
     <script src="./js/main.js"></script>
@@ -29,3 +66,5 @@
     </script>
 </body>
 </html>
+
+
